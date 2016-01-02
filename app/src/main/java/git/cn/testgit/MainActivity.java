@@ -3,7 +3,9 @@ package git.cn.testgit;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * 首页
@@ -11,6 +13,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView tvTest;
+    private Button btnShow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvTest = (TextView) findViewById(R.id.tvTest);
         tvTest.setOnClickListener(this);
 
+        btnShow = (Button) findViewById(R.id.btnShow);
+        btnShow.setOnClickListener(this);
     }
 
     /**
@@ -31,6 +36,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             // 土司
             case R.id.tvTest:
+                break;
+
+            case R.id.btnShow:
+                Toast.makeText(this, "jksdjfkdL,", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

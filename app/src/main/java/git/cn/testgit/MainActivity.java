@@ -43,4 +43,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
+    /**
+     * 这是第三版的功能
+     */
+    private void hah() {
+
+    }
+
 }

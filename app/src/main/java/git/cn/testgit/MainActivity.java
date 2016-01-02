@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 /**
- * 修改文件
+ * 首页
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    /**
+     * 第一版只有显示
+     */
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
